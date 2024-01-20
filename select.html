@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="frame-1">
+        <svg class="align-justify" width="45" height="60" viewBox="0 0 45 60" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M39.375 25H5.625" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M39.375 15H5.625" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M39.375 35H5.625" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M39.375 45H5.625" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <div class="group-5">
+            <div class="ellipse-2" id="startTrack"></div>
+            <div class="ellipse-1"></div>
+        </div>
+        <div class="track">TRACK</div>
+        <div class="want-to-launch-the-price-tracker">
+            Want to launch the Price tracker?
+        </div>
+    </div>
+
+</body>
+<style>
+    .frame-1,
+    .frame-1 * {
+        box-sizing: border-box;
+    }
+    body{
+        width: 550px;
+        height: 750px;
+    }
+    .frame-1 {
+        background: radial-gradient(133.43% 151.45% at -2.07% -1.14%, #60A4FF 0%, #5278FF 0.01%, #6CCAFF 99.99%, #99B5FF 100%);
+
+
+        Ellipse border-radius: 30px;
+        width: 550px;
+        height: 725px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .align-justify {
+        width: 45px;
+        height: 60px;
+        position: absolute;
+        left: 48px;
+        top: 35px;
+        overflow: visible;
+    }
+
+    .group-5 {
+        position: absolute;
+        inset: 0;
+    }
+
+    .ellipse-2 {
+        background: #b5f2bb;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: #27ff70;
+        border-width: 17px;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        left: 150px;
+        top: 363px;
+    }
+
+    .ellipse-1 {
+        background: #ffffff;
+        border-radius: 50%;
+        width: 219.3px;
+        height: 219.3px;
+        position: absolute;
+        left: 165.35px;
+        top: 378.35px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .track {
+        color: #5c5c5c;
+        text-align: center;
+        font-family: "Poppins-Bold", sans-serif;
+        font-size: 40px;
+        line-height: 100px;
+        font-weight: 700;
+        position: absolute;
+        left: 206px;
+        top: 438px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .want-to-launch-the-price-tracker {
+        color: #ffffff;
+        text-align: center;
+        font-family: "Poppins-Medium", sans-serif;
+        font-size: 40px;
+        line-height: 52px;
+        font-weight: 500;
+        position: absolute;
+        left: 90px;
+        top: 196px;
+        width: 367px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<script src="background.js"></script>
+
+</html>

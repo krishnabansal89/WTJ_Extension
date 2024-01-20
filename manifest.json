@@ -1,0 +1,23 @@
+{
+    "name": "Action API Demo",
+    "version": "1.0",
+    "description": "Uses the Action API to change the badge text, icon, hover text, or popup page.",
+    "manifest_version": 3,
+    "permissions": ["activeTab"  , "storage"],
+    "background": {
+		"service_worker": "background.js"
+	},
+    "content_scripts": [
+		{
+		  "matches": ["<all_urls>"],
+		  "js": ["contentscript.js"]
+		}
+	  ],
+    "host_permissions": ["<all_urls>"],
+
+    "action": {
+      "default_title": "Default Title",
+      "default_popup": "popup.html"
+      
+    }
+  }
