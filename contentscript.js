@@ -14,19 +14,21 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             .then(data => {
                 console.log(data)
                 if (data["verify"] == "true") {
-                    sendResponse({ data: true , uid: data["uid"]});
+                    sendResponse({ data: true , isLogin: true});
                 }
                 else {
-                    sendResponse({ data: false  , uid: null });
+                    sendResponse({ data: true  , isLogin: true });
                 }
             })
             .catch(error => {
                 console.log(error)
-                sendResponse({ data: false });
+                sendResponse({ data: true , isLogin: true }); 
             })
 
     }
 })
+
+
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action == "StartTracking") {
